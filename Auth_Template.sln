@@ -3,35 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.API", "Template.API\Template.API.csproj", "{C402B7EE-57A1-45FE-9968-B83809393165}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.API", "Template.API\Template.API.csproj", "{C402B7EE-57A1-45FE-9968-B83809393165}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Domain", "Template.Domain\Template.Domain.csproj", "{8E6B8AD7-39B1-4EB7-8E78-1BCA5CD9870D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.Domain", "Template.Domain\Template.Domain.csproj", "{8E6B8AD7-39B1-4EB7-8E78-1BCA5CD9870D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Application", "Template.Application\Template.Application.csproj", "{F17B293B-909F-41A2-9D9C-2FC607799CE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.Application", "Template.Application\Template.Application.csproj", "{F17B293B-909F-41A2-9D9C-2FC607799CE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Infrastructure", "Template.Infrastructure\Template.Infrastructure.csproj", "{B901BFC8-7A2D-47DD-97A5-FACB7361AF3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.Infrastructure", "Template.Infrastructure\Template.Infrastructure.csproj", "{B901BFC8-7A2D-47DD-97A5-FACB7361AF3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Contracts", "Template.Contracts\Template.Contracts.csproj", "{9CE8D759-FA3F-4ADD-B0F5-F0792A75A589}"
-EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Template.Angular", "Template.Angular\", "{F444BCEF-B08F-4856-9C8A-DB3815DD9AB3}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_54019"
-		Debug.AspNetCompiler.PhysicalPath = "Template.Angular\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54019\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_54019"
-		Release.AspNetCompiler.PhysicalPath = "Template.Angular\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54019\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "54019"
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.Contracts", "Template.Contracts\Template.Contracts.csproj", "{9CE8D759-FA3F-4ADD-B0F5-F0792A75A589}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,10 +39,6 @@ Global
 		{9CE8D759-FA3F-4ADD-B0F5-F0792A75A589}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CE8D759-FA3F-4ADD-B0F5-F0792A75A589}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CE8D759-FA3F-4ADD-B0F5-F0792A75A589}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F444BCEF-B08F-4856-9C8A-DB3815DD9AB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F444BCEF-B08F-4856-9C8A-DB3815DD9AB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F444BCEF-B08F-4856-9C8A-DB3815DD9AB3}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{F444BCEF-B08F-4856-9C8A-DB3815DD9AB3}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
