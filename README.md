@@ -26,8 +26,8 @@ Before you begin, ensure you have the following installed:
    ```sh
    git clone https://github.com/yourusername/dotnet7-angular16-auth0-template.git
 
-2. RUN Dotnet
-  install Dotnet version 7
+2. Run .NET
+  Make sure to have Dotnet version 7 installed first
    ```sh
    dotnet run
    or
