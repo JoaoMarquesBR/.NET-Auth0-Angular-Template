@@ -9,6 +9,7 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent {
+  bearerToken: any;
 
   constructor(@Inject(DOCUMENT) public document: Document, public auth: AuthService, private http: HttpClient) {}
 
@@ -27,6 +28,7 @@ export class DashboardComponent {
     this.auth.idTokenClaims$.subscribe((idToken) => {
       if (idToken && idToken.__raw) {
         this.auth.user$.subscribe(user => {
+          this.bearerToken = idToken.__raw;
           const headers = new HttpHeaders({
             'Authorization': `Bearer ${idToken.__raw}`
           });
