@@ -27,24 +27,32 @@ Before you begin, ensure you have the following installed:
    git clone https://github.com/yourusername/dotnet7-angular16-auth0-template.git
 
 2. RUN Dotnet
-  install Dotnet version 7 
-  run "dotnet run" or press (CTRL + F5) On Visual Studio (Purple One) 
+  install Dotnet version 7
+   ```sh
+   dotnet run
+   or
+   (CTRL + F5) On Visual Studio (Purple One)
 
 3. Adding your Auth0 data
 
+   ```sh
    In AppSettings, modify the following from the info of your auth0 project. 
      "Auth0": {
     "Authority": "YOUR_DOMAIN",
     "Audience": "YOUR_AUD",
     "ClientSecret": "CLIENT SECRET FOUND IN Applications/Application/[Applicationame]/Settings/Client-Secret"
-  }
-
+   }
 
 ## SetUpFrontEnd
-1. Run "npm install"
+1. Run
+   ```sh
+   npm install
 
 2. Setup SSL Certificate
-    I suggest creating your own certificates by running "openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem"
+    I suggest creating your own certificates by running
+   ```sh
+   openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
    
 4. Run angular with SSL enabled 
+   ```sh
     ng serve --ssl true
