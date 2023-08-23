@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 import { AuthModule } from '@auth0/auth0-angular';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,9 +17,10 @@ import { AuthModule } from '@auth0/auth0-angular';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     AuthModule.forRoot({
-      domain: '',
-      clientId: '',
+      domain: 'auth0-dev-reminder.us.auth0.com',
+      clientId: 'RwXTntd6IvLCmrLNJIXjSxxqaW4ZyeA2',
       authorizationParams: {
         redirect_uri: window.location.origin
       }

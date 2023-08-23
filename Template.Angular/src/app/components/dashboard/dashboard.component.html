@@ -9,6 +9,15 @@
     <li>{{ user.sub }}</li>
   </ul>
 
+
+  <button (click)="publicEndpoint()">
+    Public Endpoint
+  </button>
+
+  <button (click)="authEndpoint()">
+    Auth Endpoint
+  </button>
+
 </ng-container>
 
 <ng-template #loggedOut>
