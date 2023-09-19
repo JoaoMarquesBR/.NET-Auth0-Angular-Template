@@ -1,5 +1,11 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Template.Application.Services;
+using Template.Domain.Context;
+using Template.Domain.IRepositories;
+using Template.Domain.IServices;
+using Template.Infrastructure.Persistence;
 
 namespace Template.API
 {
@@ -79,6 +85,18 @@ namespace Template.API
             {
                 //options.AddPolicy("read:messages", policy => policy.Requirements.Add(new HasScopeRequirement("read:messages", domain)));
             });
+
+            builder.Services.AddDbContext<EmailManagementDbContext>(options =>
+            {
+                options.UseSqlServer(configuration.GetConnectionString("DbConnection"));
+            });
+
+            builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+            builder.Services.AddScoped<IEmailRegisteredRepository, EmailRegisteredRepository>();
+            builder.Services.AddScoped<IContactRepository, ContactRepository>();
+            builder.Services.AddScoped<IEmailSender,EmailSenderService>();
+            builder.Services.AddScoped<IAccountService, AccountService>();
+
 
             var app = builder.Build();
 
